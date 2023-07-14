@@ -4,5 +4,9 @@
     "PKief.material-icon-theme",
     "rocketseat.theme-omni",
     "ritwickdey.LiveServer"
-  ]
+  ],
+  "scripts": {
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
+  }
 }
