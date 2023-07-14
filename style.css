@@ -10,9 +10,8 @@
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
-  --highltigth-color: rgba(255, 255, 255, 0.02);
+  --highlight-color: rgba(255, 255, 255, 0.05);
   --switch-bg-url: url(/assets/moon-stars.svg);
-  --img-profile: url(/a);
 }
 
 .light {
@@ -21,7 +20,7 @@
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
-  --highltigth-color: rgba(0, 0, 0, 0.1);
+  --highlight-color: rgba(0, 0, 0, 0.1);
   --switch-bg-url: url(/assets/sun.svg);
 }
 
@@ -76,15 +75,15 @@ body * {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  animation: slide-out 0.2s;
+  animation: slide-out 0.4s;
 }
 
 .light #switch button {
   animation: slide-in 0.2s forwards;
 }
 
-.light #switch button {
-  outline: 8px solid var(--highltigth-color);
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
 }
 
 #switch span {
@@ -148,7 +147,7 @@ ul li a:hover {
 }
 
 #social-links a:hover {
-  background: var(--highltigth-color);
+  background: var(--highlight-color);
 }
 
 footer {
